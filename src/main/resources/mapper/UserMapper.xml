@@ -5,7 +5,7 @@
 <!--一个maper接口的方法对应一个增删改查的标签-->
 <mapper namespace="com.smart.demo.mapper.UserMapper">
     <!--子标签-->
-    <select id="selectByName" resultType="User">
+    <select id="selectByName" resultType="com.smart.demo.entity.User">
         SELECT *
         FROM user
         WHERE username = #{username};
