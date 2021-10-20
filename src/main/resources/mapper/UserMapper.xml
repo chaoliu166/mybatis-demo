@@ -1,0 +1,17 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--SQL 语句能力 -->
+<!--一个mapper接口对应一个mapper.xml文件 -->
+<!--一个maper接口的方法对应一个增删改查的标签-->
+<mapper namespace="com.smart.demo.mapper.UserMapper">
+    <!--子标签-->
+    <select id="selectByName" resultType="User">
+        SELECT *
+        FROM user
+        WHERE username = #{username};
+    </select>
+
+    <insert id="insert">
+
+    </insert>
+</mapper>
